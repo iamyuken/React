@@ -1,35 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+const App = ()=>{
+    return (
+        <>
+        <div className="flex justify-center items-center h-screen w-screen bg-purple-800">
+            <div className="w-[20%] h-1/3 bg-white">
+                <form action="" className="flex flex-col gap-4">
+                    <input type="text" placeholder="Name" className="p-3 w-full font-bold outline-none focus:border-b-2 active:border-none hover:border-purple-600"/>
+                    <input type="Email" placeholder="Email" className="p-3 w-full font-bold outline-none focus:border-b-2 active:border-none hover:border-purple-600"/>
+                    <input type="numbers" placeholder="Phone" className="p-3 w-full font-bold outline-none focus:border-b-2 active:border-none hover:border-purple-600"/>
+                    <input type="Password" placeholder="Password" className="p-3 w-full font-bold outline-none focus:border-b-2 active:border-none hover:border-purple-600"/>
+                    <button className="p-3 bg-[#beadec] w-full font-bold  outline-none active:outline-none focus:border-b-2  hover:border-purple-500">Register</button>
+                </form>
+            </div>
+           </div> 
+        </>
+    );
 }
 
-export default App
+export default App;
