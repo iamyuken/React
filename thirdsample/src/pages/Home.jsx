@@ -1,8 +1,13 @@
+import '../assets/css/styles.css'
+import Navbar from '../components/Navbar';
 
 const Home = () => {
     return (
         <>
-            <h1>HI</h1>
+        <Navbar/>
+        <div className="h-screen w-screen">
+            Home
+        </div>
         </>
     );
 }
